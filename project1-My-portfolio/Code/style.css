@@ -1,3 +1,4 @@
+/* All pages */
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +10,9 @@ body {
   color: #ffcb74;
   font-family: "Indie Flower", cursive;
 }
-/* body #container {
-  justify-content: center;
-} */
 
+/* Header For All pages */
 header aside {
-  color: white;
   display: flex;
   position: fixed;
   flex: 1;
@@ -31,6 +29,7 @@ header aside {
 
 header aside a {
   text-decoration-line: none;
+  color: #07031a;
 }
 
 header aside a:hover {
@@ -48,6 +47,7 @@ header aside a:hover {
   }
 }
 
+/* Home Body */
 #container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -101,15 +101,17 @@ header aside a:hover {
   transform: scale(1.4) rotate(4deg);
 }
 
+/* Footer for All Pages */
 .textfooter {
   color: black;
-  bottom: 0;
   position: fixed;
   background: #ffcb74;
   text-align: center;
   width: 100%;
+  bottom: 0;
 }
 
+/* Contact Page */
 #info-cont {
   font-family: "Indie Flower", cursive;
   font-size: 1.3em;
@@ -199,16 +201,26 @@ h3 {
   }
 }
 
+/* Work Page */
+
+/*
+I Know that isn't best practice
+I tried a lot of way but this way
+worked with me so I hope to give me feedback
+and how i can improve this code to be best practice and responsive  
+
+Best regards.
+
+*/
 .container-w {
   display: grid;
-  /* grid-template-areas: "cardd-w"; */
   grid-template-areas:
     "cardd-1 cardd-2 cardd-3 cardd-4"
     "cardd-5 cardd-5 cardd-5 cardd-5";
   grid-gap: 0.25rem;
   font-size: 1.4em;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
   margin-top: 1em;
 }
 
@@ -284,18 +296,18 @@ section div img {
   text-align: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container-w {
     grid-template-areas:
-      "cardd-1"
-      "cardd-2"
-      "cardd-3"
-      "cardd-4"
-      "cardd-5";
+      "cardd-1 cardd-1"
+      "cardd-2 cardd-2"
+      "cardd-3 cardd-3"
+      "cardd-4 cardd-4"
+      "cardd-5 cardd-5";
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .container-w {
     grid-template-areas:
       "cardd-1 cardd-2"
@@ -310,6 +322,13 @@ section div img {
   font-size: 5em;
   color: white;
 }
+
+/* this is part of my endeavors :) */
+
+/* .skillsbar {
+  transform: translateY(10em);
+  
+} */
 
 /* .Bio {
   color: white; 
