@@ -6,7 +6,7 @@
 	font-family: "Righteous", cursive;
 }
 html {
-	background-image: url(calcimg4.jpg);
+	background: url(../HomePage/Images/background.png) fixed;
 	background-repeat: repeat;
 }
 /* grid */
@@ -18,6 +18,62 @@ html {
 }
 .item3 {
 	grid-area: footer;
+}
+
+#mainNav {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 16px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	background: #f6f5f5;
+	transition: background 0.4s;
+	z-index: 3;
+}
+.user_Data {
+	padding: 1rem;
+	border-right: 1px #333 solid;
+	margin: 0.5rem 0.5rem;
+}
+#mainNav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	align-items: center;
+	width: 400px;
+	justify-content: space-between;
+	text-align: center;
+	font-size: 1vmax;
+}
+.logout {
+	background-color: #ee6f57;
+	padding: 0.5rem;
+	border-radius: 10px;
+}
+
+#mainNav ul li a {
+	text-decoration: none;
+	color: #070d59;
+	font-weight: 500;
+	transition: color 0.3s;
+	padding: 0.5rem;
+}
+
+#mainNav ul li a:hover:not(.logout) {
+	background: #1f3c88;
+	color: #eee;
+	border-radius: 10px;
+}
+.bg-black {
+	background: #070d59 !important;
+}
+.text-white ul li a {
+	color: #f6f5f5 !important;
+}
+.text-white {
+	color: #f6f5f5 !important;
 }
 
 .grid-container {
