@@ -5,6 +5,13 @@ addToCart();
 user_Data_Func();
 //Header();
 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 //User Data On header
 function user_Data_Func() {
   var Name = document.getElementById("Name_1");

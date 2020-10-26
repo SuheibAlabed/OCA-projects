@@ -36,7 +36,33 @@
             </li>
           </ul>
         </nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="../HomePage/index.html">Home</a>
+          <a href="#menu2" id="Menu_1">Menu</a>
+          <a href="../CalculatorPage/calculator.html">Calculator</a>
+          <a href="../SignInPage/SignIN.html" class="logout">Logout</a>
+        </div>
+        <span
+          style="
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            position: fixed;
+            top: 0;
+            text-shadow: 3px 4px #333 10px;
+            z-index: 10;
+            margin: 1rem 0rem 0rem 1rem;
+            visibility: hidden;
+          "
+          class="navIcon"
+          onclick="openNav()"
+          >&#9776; open</span
+        >
       </header>
+
       <section>
         <div class="Logo">
           <img src="Images/Logo_2.png" alt="Chicken Logo" width="300px" />
@@ -53,7 +79,7 @@
               <div class="Item_Image">
                 <img src="Images/Pizza.jpg" alt="FoodImg" width="150px" />
               </div>
-              <span id="Price">20$</span>
+              <p id="Price">20$</p>
               <hr />
               <p id="Title_1">Pizza hut</p>
               <button id="BuyBtn">Buy</button>
@@ -63,7 +89,7 @@
               <div class="Item_Image">
                 <img src="Images/meat_cheese.jpg" alt="FoodImg" width="150px" />
               </div>
-              <span id="Price">30$</span>
+              <p id="Price">30$</p>
               <hr />
 
               <p>Lorem ipsum dolor sit.</p>
@@ -74,7 +100,7 @@
               <div class="Item_Image">
                 <img src="Images/Cake.jpg" alt="FoodImg" width="150px" />
               </div>
-              <span id="Price">38$</span>
+              <p id="Price">38$</p>
               <hr />
               <p>Lorem ipsum dolor sit.</p>
               <button id="BuyBtn">Buy</button>
@@ -84,7 +110,7 @@
               <div class="Item_Image">
                 <img src="Images/cheese.jpeg" alt="FoodImg" width="190px" />
               </div>
-              <span id="Price">30$</span>
+              <p id="Price">30$</p>
               <hr />
               <p>Lorem ipsum dolor sit.</p>
               <button id="BuyBtn">Buy</button>
@@ -94,7 +120,7 @@
               <div class="Item_Image">
                 <img src="Images/meat_cheese.jpg" alt="FoodImg" width="150px" />
               </div>
-              <span id="Price">40$</span>
+              <p id="Price">40$</p>
               <hr />
               <p>Lorem ipsum dolor sit.</p>
               <button id="BuyBtn">Buy</button>
