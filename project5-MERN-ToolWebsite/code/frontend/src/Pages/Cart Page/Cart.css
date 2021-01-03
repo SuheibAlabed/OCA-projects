@@ -1,0 +1,74 @@
+.Cart-header {
+  height: 70vh;
+  background: var(--bg-footer-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size);
+}
+
+.CartItem {
+  border: 1px solid #333;
+  border-radius: 0rem;
+  margin-top: 5rem;
+  width: 90%;
+  margin: 2rem auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+
+
+}
+
+.CartItem h2 {
+  text-align: center;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+
+.mainCard{
+  display: contents;
+}
+
+.CartTotal {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 0 20px #ddd;
+  width: 80vw;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.Row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CartTotal .Col-2 {
+  text-align: right;
+}
+
+.CartTotal .Col-2 p {
+  margin-bottom: 1rem !important;
+}
+
+.CartTotal p {
+  margin-bottom: 0.5rem !important;
+}
+
+.CartTotal button {
+  border: none;
+  padding: 0.5rem;
+  outline: none !important;
+}
+
+.CartTotal button:hover {
+  background: var(--bg-nav-color);
+  color: #fff;
+}

@@ -1,0 +1,159 @@
+.CardItem-Container {
+  display: flex;
+  flex-direction: row;
+
+  box-shadow: 0 0 20px #ddd;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem;
+  justify-self: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  background-color: #F1EEE8;
+}
+
+.CardItem-Container:hover {
+  /* background: white; */
+  /* color: #333 !important; */
+}
+
+.bg-card-1 {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  opacity: 30%;
+
+}
+
+.CardItem-Container h3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.CardItem-Container:hover {
+  box-shadow: 0 0 5px #ddd;
+}
+
+.CardItem-Container .Card-Counter {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-items: center;
+}
+
+.CardItem-Container .Card-Counter button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.Card-Counter h5 {
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+.Card-Counter h3 {
+  margin-bottom: 0rem !important;
+}
+
+.Card-Counter .btn-ChangeCount {
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--bg-nav-color);
+  color: white;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.Card-Counter .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card-Counter-Edit {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Card-Info {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.Card-Edit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+
+.Card-Edit button {
+  background: none;
+  border: none;
+  outline: none !important;
+}
+
+.Card-Edit button:hover {
+  background: none !important;
+  color: #333 !important;
+}
+
+.Card-Info .Price {
+  margin: 2rem 0rem 2rem 0;
+}
+
+.cardImg img {
+  width: 10rem;
+  height: 9rem;
+  /* margin-left: .75rem; */
+  transition: all 0.9s ease;
+}
+
+.cardImg img:hover {
+  transform: translateY(-10px);
+}
+
+.Card-Delete-Icon button {
+  position: absolute;
+  right: 0;
+  background: none;
+  border: none;
+  outline: none !important;
+  padding-right: 1.2rem;
+  color: var(--bg-nav-color);
+}
+
+.Card-Delete-Icon button:hover {
+  color: #c20202;
+}
+
+@media screen and (max-width: 720px) {
+  .Card-Delete-Icon button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.2rem;
+  }
+
+  .CardItem-Container {
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Card-Info {
+    align-items: center;
+  }
+}

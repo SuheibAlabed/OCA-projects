@@ -1,0 +1,65 @@
+/* body {
+	background-image: url('http://giardino.axiomthemes.com/wp-content/uploads/2018/08/bg-home-slider.jpg?id=993');
+	background-attachment: fixed;
+
+
+
+} */
+.googleLogin{
+	margin: 20px auto !important;
+	display: flex !important;
+}
+
+.Signin-Signup-Container {
+	display: grid;
+	grid-template-columns: 1fr 2px 1fr;
+	margin: 4rem 0;
+	/* background-color: #A6A087; */
+}
+
+.Form-line {
+	height: 100%;
+	width: 80%;
+	margin: auto;
+	background-color: #d7d4cc;
+}
+
+.header {
+	text-align: center;
+}
+
+.Signup-form {
+	padding: 0rem 3rem;
+}
+
+.Signin-form {
+	padding: 0rem 3rem;
+}
+
+.Element-signup {
+	width: 100%;
+	margin: 0.5rem !important;
+}
+
+.Element-signin {
+	width: 100%;
+	margin: 0.5rem !important;
+}
+
+.error-msg {
+	margin-top: 1rem;
+}
+
+.btn-info {
+	background-color: black !important;
+	border-color: black !important;
+	border-radius: 0%;
+}
+
+@media only screen and (max-width: 575px) {
+	.Signin-Signup-Container {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 2px auto;
+		grid-gap: 2rem;
+	}
+}
