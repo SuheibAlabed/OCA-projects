@@ -14,9 +14,9 @@ include 'include/header.php';
         $products = mysqli_query($conn, $sql);
         while ($pro = mysqli_fetch_assoc($products)) {
             echo "
-    <div class='auto-container'>
-    <h1>{$pro['pro_name']}</h1>
-    <ul class='page-breadcrumb'>
+        <div class='auto-container'>
+        <h1>{$pro['pro_name']}</h1>
+        <ul class='page-breadcrumb'>
         <li><a href='index.php'>home</a></li>
         <li><a href='shop.php'>Products</a></li>
         <li>{$pro['pro_name']}</li>

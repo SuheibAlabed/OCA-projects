@@ -10,10 +10,13 @@ import Profile from "./Pages/src/App.js"
 import Cart from "./Pages/Cart Page/Cart"
 import {useEffect, useState} from "react";
 import "./App.css"
+import "./Component/popup/section1.css"
+
 
 if(!localStorage.getItem("cart")){
     localStorage.setItem("cart","[]")
 }
+
 
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
 
 
     const [item, setItem] = useState(JSON.parse(localStorage.getItem("cart")).length);
+
+
+
   return (
 
       <div >

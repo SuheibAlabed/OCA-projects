@@ -1,5 +1,7 @@
       import bg from "../../../../Img/test-bg.jpg"
-import Pic from "../../../../Img/testimonial/osama.png"
+import Pic from "../../../../Img/testimonial/osama (2).png"
+
+
 
       function Testimonial(){
 

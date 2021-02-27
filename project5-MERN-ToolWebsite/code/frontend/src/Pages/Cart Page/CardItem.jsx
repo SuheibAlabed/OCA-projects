@@ -50,12 +50,12 @@ function CardItem(props){
           </button>
         </div>
         <div className="Card-Info">
-          <h3>Name:{props.name}</h3>
+          <h3>Name : {props.name}</h3>
           <h3 className="Price">Price: {TotalPrice} JOD</h3>
 
           {isCount ? (
             <div className="Card-Counter">
-              <h3>Count: </h3>
+              <h3>Quantity : </h3>
               <button
                 className="btn-ChangeCount"
                 onClick={() => plusCount(Count)}
@@ -80,7 +80,7 @@ function CardItem(props){
             </div>
           ) : (
             <div className="Card-Counter">
-              <h3>Count: </h3>
+              <h3>Quantity : </h3>
               <h3>{Count}</h3>
               <div className="Card-Edit">
                 <button onClick={() => isEditCount(true)}>

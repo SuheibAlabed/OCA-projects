@@ -83,7 +83,7 @@ if (isset($_POST['submit'])) {
     $pro_desc   = $_POST['description'];
     $pro_price  = $_POST['price'];
     $pro_offer  = $_POST['pro_offer'];
-    $store_id  = $_POST['store_id'];
+    $store_id   = $_POST['store_id'];
 
     if ($pro_offer > 0) {
         echo "<h1> Hi--- {$_POST['pro_offer']} </h1>";
@@ -105,14 +105,15 @@ if (isset($_POST['submit'])) {
     $query = "INSERT INTO products(pro_name ,pro_desc ,pro_price, offer, is_off  , pro_img ,store_id)
 	         values('$pro_name','$pro_desc','$pro_price', '$pro_offer', '$is_off' , '$filename', '$store_id[0]')";
     mysqli_query($conn, $query);
+
     $pro_name   = '';
     $pro_desc   = '';
     $pro_price  = '';
     $pro_offer  = '';
-    $store_id  = '';
+    $store_id   = '';
     $is_off     = false;
 }
-
+//alert to confirme
 include('includes/admin_header.php');  ?>
 
 <div class="main-content">

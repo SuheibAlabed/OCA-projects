@@ -46,7 +46,7 @@ function Profile(){
                 },
                 body: JSON.stringify({
                     id:Obj._id,
-                    img:event.target.result
+                    img:event.target.result.toString()
                 }),
             })
                 .then((res) =>
@@ -139,7 +139,7 @@ function Profile(){
 
                                 <img width="208px"  className="rounded" src={Img2}/>
                                 <div className="d-flex flex-column col justify-content-between">
-<div className="card-array" >
+<div style={{maxWidth:"max-content"}} className="card-array" >
 
                                     {Obj.orders.map(i=><h6>{i.dishName} X {i.cost} JOD</h6>)}
 

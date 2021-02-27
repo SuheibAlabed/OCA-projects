@@ -8,7 +8,7 @@
         $user_name            = $_POST['user_name'];
         $user_email           = $_POST['user_email'];
         $user_password        = $_POST['user_password'];
-        $query = "UPDATE users SET    fullname      = '$user_name',
+        $query = "UPDATE users SET       fullname      = '$user_name',
                                          email         = '$user_email',
                                          password      = '$user_password'
                                          WHERE user_id = {$_POST['user_id']}";

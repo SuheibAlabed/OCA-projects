@@ -75,8 +75,11 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.DoneBTN p{
+  margin: 0.5rem 0 !important;
+}
 .popup-llsoboh .DoneBTN {
-  background-color: #015788
+  background-color: #a6a087
 ;
   color: white;
   text-align: center;

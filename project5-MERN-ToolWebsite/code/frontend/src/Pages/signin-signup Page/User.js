@@ -12,7 +12,7 @@ import { Alert } from "@material-ui/lab";
 import { EmailField } from "@material-ui/core";
 import "./User.css";
 import Navbar from "../../Component/NavBar/Navbar";
-import { Redirect } from "react-router-dom";
+import {Link, Redirect} from "react-router-dom";
 
 export default function User() {
 
@@ -53,6 +53,8 @@ export default function User() {
 					console.log(res.message);
 					localStorage.setItem("UserStatus" ,  JSON.stringify(res.user));
 					setIslogin(true)
+					window.location="#popup1"
+
 
 				})
 			)
@@ -104,7 +106,7 @@ export default function User() {
 
 	return (
 		<UserContext.Provider value={true}>
-			{islogedin && <Redirect to="/profile" />}
+			{/*{islogedin && <Redirect to="/profile" />}*/}
 			<div className="Signin-Signup-Container">
 				<div className="Signup-form" id="Bform">
 					<div>
@@ -270,6 +272,39 @@ export default function User() {
 						</form>
 					</div>
 				</div>
+
+				<div className="popup-llsoboh">
+
+
+					<div style={{zIndex:"1"}} id="popup1" className="overlay ">
+						<div className="popup">
+							<h2 className="text-success text-center">Verification sent to Your Email</h2>
+							<Link className="close" to="/profile">&times;</Link>
+							<div className="content ">
+
+								<TextField
+
+									type="text"
+									label="Verification Code"
+									variant="outlined"
+									className="col-12 my-3"
+
+
+
+								/>
+
+								<div className="">
+									<Link className='DoneBTN ' to="/profile">
+										<p style={{ color: '#fff' }}>Done</p>
+									</Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
 			</div>
 		</UserContext.Provider>
 	);
